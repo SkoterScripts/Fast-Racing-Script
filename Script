@@ -1,0 +1,19 @@
+local kavoUi = loadstring(game:HttpGet("https://pastebin.com/raw/vff1bQ9F"))()
+local window = kavoUi.CreateLib("Fast Racing!","Midnight")
+
+---Tabs
+ 
+local Tab1 = window:NewTab("Main")
+local Tab2 = window:NewTab("Sup")
+local Tab2Section = Tab2:NewSection("Sup is word")
+local Tab1Section = Tab1:NewSection("Made By biel17125")
+ 
+---Buttons
+
+Tab1Section:NewButton("Speed Inf","9999...",function()
+game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 999999999
+end)
+
+Tab2Section:NewButton("Keyboard","Pc Like Keyboard",function()
+loadstring(game:HttpGet(('https://raw.githubusercontent.com/manimcool21/Keyboard-FE/main/Protected%20(3).lua'),true))()
+end)
